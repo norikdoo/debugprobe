@@ -70,7 +70,7 @@ if (DEBUG_ON_PICO)
     target_compile_definitions (debugprobe PRIVATE
 	DEBUG_ON_PICO=1
     )
-    if (PICO_BOARD STREQUAL "pico")
+    if (PICO_BOARD STREQUAL "pico" OR PICO_BOARD STREQUAL "dect_dongle")
         set_target_properties(debugprobe PROPERTIES
             OUTPUT_NAME "debugprobe_on_pico"
         )

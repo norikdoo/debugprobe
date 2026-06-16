@@ -38,9 +38,9 @@
 #define PROBE_PIN_RESET 15
 
 // UART config
-#define PROBE_UART_TX 17 // Switched around from compared to schematics
-#define PROBE_UART_RX 16 // Because TX from RP2040 needs to go to RX on nRF9151
-#define PROBE_UART_INTERFACE uart1
+#define PROBE_UART_TX 16
+#define PROBE_UART_RX 17
+#define PROBE_UART_INTERFACE uart0
 #define PROBE_UART_BAUDRATE 115200
 
 #define PROBE_USB_CONNECTED_LED 2
